@@ -286,10 +286,10 @@ this plugin begin with eventId of 1000 and higher.
 
 ## Version History
 
-**v1.0**  9/28/2020
+**v1.0** - 9/28/2020
 - Event Generator released for RPG Maker MZ!
 
-**v2.0**  1/12/2023
+**v2.0** - 1/12/2023
 - Events now generate 20+ times faster! Efficiency greatly improved!
 - Script calls added, useful for conditional branches:
    * `$gameMap.eventWasGenerated()`
