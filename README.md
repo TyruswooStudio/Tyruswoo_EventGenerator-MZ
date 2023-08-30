@@ -315,6 +315,9 @@ this plugin begin with eventId of 1000 and higher.
   that takes multi-part keys (in a similar fashion to
   Game_SelfSwitches).
 
+**v2.0.1** - 8/28/2023
+- This plugin is now free and open source under the [MIT license](https://opensource.org/license/mit/).
+
 > **Remember, only you can build your dreams!**
 >
 > *Tyruswoo*
