@@ -1,7 +1,7 @@
 //=============================================================================
 // Event Generator
 // For RPG Maker MZ
-// By Tyruswoo
+// By Kathy "McKathlin" Bunn and Scott Tyrus "Tyruswoo" Washburn
 //=============================================================================
 
 /*
@@ -10,22 +10,22 @@
  * Copyright (c) 2023 Kathy Bunn and Scott Tyrus Washburn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
+ * of this software and associated documentation files (the “Software”), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
  */
 
 var Imported = Imported || {};
@@ -36,8 +36,8 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
 
 /*:
  * @target MZ
- * @plugindesc MZ v2.0 Generate events during gameplay! Model events from any map. Can generate multiple events at once. Use formulas to determine quantity.
- * @author Tyruswoo and McKathlin
+ * @plugindesc MZ v2.0.1 Generate events during gameplay! Model events from any map. Use formulas to determine quantity to generate.
+ * @author McKathlin and Tyruswoo
  * @url https://www.tyruswoo.com
  *
  * @help Tyruswoo Event Generator for RPG Maker MZ
@@ -335,38 +335,61 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
  * ============================================================================
  * Version History:
  *
- * v1.0  9/28/2020
- *        - Event Generator released for RPG Maker MZ!
+ * MZ v1.0  9/28/2020
+ *  - Event Generator released for RPG Maker MZ!
  *
- * v2.0  1/12/2023
- *        - Events now generate 20+ times faster! Efficiency greatly improved!
- *        - Script calls added, useful for conditional branches:
- *             $gameMap.eventWasGenerated()
- *             $gameMap.enemyWasGenerated()
- *             $gameMap.eventName()
- *             $gameMap.enemyName()
- *        - New Feature: Shared slain count map groups. Maps in the same group
- *          share their slain counts.
- *        - Bugfix: Fixed duplicative creation of sprites for events that
- *          already existed on the map at the time of the event generator
- *          function running. The bug resulted in many events (and party
- *          members) having decreased transparency of transparent pixels. Now,
- *          this bugfix results in the transparency of all sprites remaining as
- *          intended.
- *        - Bugfix: Fixed a bug in which encounters belonging to a region did
- *          not correctly determine an eventNames index when creating a new
- *          slain record. This fix prevents a crash when looking up indices
- *          that were inadvertently created without a name or value.
- *        - Bugfix: Fixed slain count crash that happened when player enters a
- *          map that didn't exist when the save file was first created.
- *        - Code Improvement: Moderately reduced save bloat by overhauling save
- *          counting and replacing the array of arrays with a minimal object
- *          that takes multi-part keys (in a similar fashion to
- *          Game_SelfSwitches).
+ * MZ v2.0  1/12/2023
+ *  - Events now generate 20+ times faster! Efficiency greatly improved!
+ *  - Script calls added, useful for conditional branches:
+ *       $gameMap.eventWasGenerated()
+ *       $gameMap.enemyWasGenerated()
+ *       $gameMap.eventName()
+ *       $gameMap.enemyName()
+ *  - New Feature: Shared slain count map groups. Maps in the same group share
+ *    their slain counts.
+ *  - Bugfix: Fixed duplicative creation of sprites for events that already
+ *    existed on the map at the time of the event generator function running.
+ *    The bug resulted in many events (and party members) having decreased
+ *    transparency of transparent pixels. Now, this bugfix results in the
+ *    transparency of all sprites remaining as intended.
+ *  - Bugfix: Fixed a bug in which encounters belonging to a region did not
+ *    correctly determine an eventNames index when creating a new slain record.
+ *    This fix prevents a crash when looking up indices that were inadvertently
+ *    created without a name or value.
+ *  - Bugfix: Fixed slain count crash that happened when player enters a map
+ *    that didn't exist when the save file was first created.
+ *  - Code Improvement: Moderately reduced save bloat by overhauling save
+ *    counting and replacing the array of arrays with a minimal object that
+ *    takes multi-part keys (in a similar fashion to Game_SelfSwitches).
+ *
+ * MZ v2.0.1  8/28/2023
+ *  - This plugin is now free and open source under the MIT license.
  *
  * ============================================================================
+ * MIT License
+ *
+ * Copyright (c) 2023 Kathy Bunn and Scott Tyrus Washburn
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the “Software”), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ * ============================================================================
  * Remember, only you can build your dreams!
- * -Tyruswoo
+ * -Scott Tyrus "Tyruswoo" Washburn and Kathy "McKathlin" Bunn
  *
  * @param Default Model Map
  * @type number
