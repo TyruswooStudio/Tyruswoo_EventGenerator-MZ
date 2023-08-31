@@ -36,12 +36,12 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
 
 /*:
  * @target MZ
- * @plugindesc v1.0 Generate events during gameplay! Model events from any map can be used. Can generate multiple events at once. Can use formulas to determine quantity.
+ * @plugindesc v1.0.1 Generate events during gameplay! Model events from any map can be used. Can generate multiple events at once. Can use formulas to determine quantity.
  * @author Tyruswoo
  * @url https://www.tyruswoo.com
  *
  * @help Tyruswoo Event Generator for RPG Maker MZ
- 
+
  * WARNING: This is an older plugin! It lacks features and improvements
  * present in the latest version. You can get the latest version for free
  * on Tyruswoo.com.
