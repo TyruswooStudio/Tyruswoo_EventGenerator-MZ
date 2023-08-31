@@ -1,4 +1,9 @@
-# Tyruswoo Event Generator for RPG Maker MZ
+## WARNING: This is an older version!
+It lacks the features and improvements of this plugin's later versions.
+To get the latest version for free, visit
+[Tyruswoo.com](https://www.tyruswoo.com).
+
+# Tyruswoo Event Generator v1.0.1 for RPG Maker MZ
 
 Generate events at runtime (during gameplay)!
 
@@ -289,34 +294,8 @@ this plugin begin with eventId of 1000 and higher.
 **v1.0** - 9/28/2020
 - Event Generator released for RPG Maker MZ!
 
-**v2.0** - 1/12/2023
-- Events now generate 20+ times faster! Efficiency greatly improved!
-- Script calls added, useful for conditional branches:
-   * `$gameMap.eventWasGenerated()`
-   * `$gameMap.enemyWasGenerated()`
-   * `$gameMap.eventName()`
-   * `$gameMap.enemyName()`
-- New Feature: Shared slain count map groups. Maps in the same group
-  share their slain counts.
-- Bugfix: Fixed duplicative creation of sprites for events that
-  already existed on the map at the time of the event generator
-  function running. The bug resulted in many events (and party
-  members) having decreased transparency of transparent pixels. Now,
-  this bugfix results in the transparency of all sprites remaining as
-  intended.
-- Bugfix: Fixed a bug in which encounters belonging to a region did
-  not correctly determine an eventNames index when creating a new
-  slain record. This fix prevents a crash when looking up indices
-  that were inadvertently created without a name or value.
-- Bugfix: Fixed slain count crash that happened when player enters a
-  map that didn't exist when the save file was first created.
-- Code Improvement: Moderately reduced save bloat by overhauling save
-  counting and replacing the array of arrays with a minimal object
-  that takes multi-part keys (in a similar fashion to
-  Game_SelfSwitches).
-
-**v2.0.1** - 8/28/2023
-- This plugin is now free and open source under the [MIT license](https://opensource.org/license/mit/).
+**v1.0.1** - 8/30/2023
+- This older plugin is now free and open source under the [MIT license](https://opensource.org/license/mit/).
 
 > **Remember, only you can build your dreams!**
 >
