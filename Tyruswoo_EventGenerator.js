@@ -41,7 +41,7 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
  * @url https://www.tyruswoo.com
  *
  * @help Tyruswoo Event Generator for RPG Maker MZ
-
+ * 
  * WARNING: This is an older plugin! It lacks features and improvements
  * present in the latest version. You can get the latest version for free
  * on Tyruswoo.com.
