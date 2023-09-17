@@ -36,7 +36,7 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
 
 /*:
  * @target MZ
- * @plugindesc v1.0.1 Generate events during gameplay! Model events from any map can be used. Can generate multiple events at once. Can use formulas to determine quantity.
+ * @plugindesc MZ v1.0.1 Generate events during gameplay! Model events from any map can be used. Generate multiple events at once. Can use formulas to determine quantity.
  * @author Tyruswoo
  * @url https://www.tyruswoo.com
  *
