@@ -36,7 +36,7 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
 
 /*:
  * @target MZ
- * @plugindesc MZ v2.0.1 Generate events during gameplay! Model events from any map. Use formulas to determine quantity to generate.
+ * @plugindesc MZ v2.0.2 Generate events during gameplay! Model events from any map. Use formulas to determine quantity to generate.
  * @author McKathlin and Tyruswoo
  * @url https://www.tyruswoo.com
  *
@@ -364,6 +364,10 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
  *
  * MZ v2.0.1  8/28/2023
  *  - This plugin is now free and open source under the MIT license.
+ *
+ * MZ v2.0.2  ??/??/2024
+ *  - Bugfix: Fixed generated events not knowing their starting location,
+ *    a property used by Tyruswoo Event AI.
  *
  * ============================================================================
  * MIT License
@@ -1495,6 +1499,10 @@ Tyruswoo.EventGenerator = Tyruswoo.EventGenerator || {};
 				//Make sure the generated event has a sprite/graphic. Otherwise, the event cannot be seen, even though it exists.
 				SceneManager._scene._spriteset.createGeneratedCharacter( newEvent );
 			}
+		}
+		// The block below coordinates with Tyruswoo_EventAI.
+		if (newEvent.setNewOrigin) {
+			newEvent.setNewOrigin(x, y);
 		}
 	};
 	
