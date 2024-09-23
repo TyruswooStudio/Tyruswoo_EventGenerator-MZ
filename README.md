@@ -318,8 +318,10 @@ this plugin begin with eventId of 1000 and higher.
 **v2.0.1** - 8/28/2023
 - This plugin is now free and open source under the [MIT license](https://opensource.org/license/mit/).
 
-**v2.0.2** - Pending
-- Bugfix: Fixed generated events not knowing their starting location,
+**v2.0.2** - 9/23/2024
+- Fixed a compatibility issue with with VisuMZ_1_EventsMoveCore.js
+  and confirmed compatibility when placed BELOW VisuStella plugins.
+- Fixed generated events not knowing their starting location,
   a property used by Tyruswoo Event AI.
 
 > **Remember, only you can build your dreams!**
